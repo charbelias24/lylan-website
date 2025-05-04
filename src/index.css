@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2A9D8F;
+  --primary-light: #40916C;
+  --primary-dark: #1E6F65;
+  --secondary: #FF8A5C;
+  --secondary-light: #FFB088;
+  --secondary-dark: #E07A50;
+  --neutral-light: #F8EDEB;
+  --neutral-dark: #264653;
+  --accent: #F9C74F;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-body text-neutral-800 bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-16 px-4 md:py-24 md:px-8 max-w-7xl mx-auto;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl text-center mb-12 text-neutral-dark relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply block w-20 h-1 bg-secondary mx-auto mt-4;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 inline-block;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark text-white shadow-md hover:shadow-lg;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
+
+.menu-image {
+  transition: transform 0.3s ease;
+}
+
+.menu-image:hover {
+  transform: scale(1.05);
+}
