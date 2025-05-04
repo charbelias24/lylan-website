@@ -101,7 +101,7 @@ const About: React.FC = () => {
       <div className="absolute -left-16 -top-16 w-48 h-48 bg-secondary opacity-10 rounded-full"></div>
 
       <div className="max-w-3xl mx-auto text-center relative">
-        <h2 className="section-title">Chez Ly-Lan</h2>
+        <h2 className="section-title">À Propos</h2>
         <p className="text-lg md:text-l leading-relaxed mb-8">
           Chez Ly-Lan, tous les poke bowls sont préparés sous vos yeux à la minute pour préserver la qualité et la fraicheur de nos ingrédients.
           Nous privilégions l'origine des matières premières en utilisant dans la mesure du possible des produits issus d'une agriculture biologique, de circuits courts ou labellisés. Outre l'importance du manger sain et bon, limiter notre impact écologique est primordial pour nous.

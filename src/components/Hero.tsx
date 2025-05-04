@@ -13,10 +13,10 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto fade-in">
         <h1 className="text-4xl md:text-6xl text-white font-bold mb-4">
-          Des Bols de Poké Frais et Tropicaux à Lyon
+          Poké Frais et Savoureux à Lyon
         </h1>
         <p className="text-xl md:text-2xl text-white mb-8">
-          Des bols inspirés de la cuisine hawaïenne préparés avec les ingrédients les plus frais
+          Des bols gourmands, préparés avec des ingrédients de qualité
         </p>
         <a href="#order" className="btn btn-secondary text-lg">
           Commander

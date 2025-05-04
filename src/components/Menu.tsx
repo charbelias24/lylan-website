@@ -15,8 +15,8 @@ const Menu: React.FC = () => {
             <button
               key={category.id}
               className={`px-6 py-2 rounded-full text-sm md:text-base font-medium transition-all ${activeCategory === category.id
-                  ? 'bg-primary text-white'
-                  : 'bg-white text-neutral-800 hover:bg-gray-100'
+                ? 'bg-[#34757b] text-white'
+                : 'bg-white text-neutral-800 hover:bg-gray-100'
                 }`}
               onClick={() => setActiveCategory(category.id)}
             >
