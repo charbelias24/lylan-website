@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
       <div className="section py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Lylan Poké</h3>
+            <h3 className="text-2xl font-bold mb-4">LY-LAN POKE BAR</h3>
             <p className="mb-4">
-              Fresh, healthy poké bowls inspired by Hawaiian cuisine, made with love in Lyon.
+              Des bols de poké frais et sains inspirés de la cuisine hawaïenne, préparés avec amour à Lyon.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-secondary transition-colors">
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="text-xl font-semibold mb-4">Visit Us</h4>
+            <h4 className="text-xl font-semibold mb-4">Nous Trouver</h4>
             <div className="flex items-start mb-3">
               <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
               <p>123 Rue des Pêcheurs<br />69001 Lyon, France</p>
@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
             <div className="flex items-start mb-3">
               <Clock size={18} className="mr-2 mt-1 flex-shrink-0" />
               <div>
-                <p>Monday - Friday: 11:30 - 22:00</p>
-                <p>Saturday - Sunday: 12:00 - 22:30</p>
+                <p>Lundi - Vendredi: 11:30 - 22:00</p>
+                <p>Samedi - Dimanche: 12:00 - 22:30</p>
               </div>
             </div>
             <div className="flex items-center">
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Lylan Poké Location"
+                title="LY-LAN POKE BAR Location"
               ></iframe>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
 
       <div className="bg-black/30 py-4">
         <div className="max-w-7xl mx-auto px-4 text-center text-sm">
-          <p>© {new Date().getFullYear()} Lylan Poké. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} LY-LAN POKE BAR. All rights reserved.</p>
         </div>
       </div>
     </footer>

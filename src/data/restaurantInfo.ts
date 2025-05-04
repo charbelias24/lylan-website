@@ -28,7 +28,7 @@ export interface RestaurantInfo {
 }
 
 export const restaurantInfo: RestaurantInfo = {
-  name: "Lylan Poké",
+  name: "LY-LAN POKE BAR",
   tagline: "Fresh, Tropical Poké Bowls in Lyon",
   address: {
     street: "123 Rue des Pêcheurs",
