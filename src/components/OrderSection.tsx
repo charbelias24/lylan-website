@@ -126,7 +126,7 @@ const OrderSection: React.FC = () => {
                 {selectedRestaurant ? (
                   <a
                     href={service.link}
-                    className="inline-block px-4 py-2 rounded-full bg-[#e67e6d] text-white font-medium hover:bg-[#d46b5a] transition-colors"
+                    className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary hover:text-white transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

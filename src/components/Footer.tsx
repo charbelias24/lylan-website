@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col items-end">
+          <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-neutral-300">Tél: 04 28 38 04 87</p>
           </div>
