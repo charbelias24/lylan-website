@@ -8,20 +8,23 @@ const restaurants = [
     openingHours: 'Lundi à Dimanche: 11h30 - 14h30',
     deliveryServices: [
       {
-        name: 'Retrait en Magasin',
-        icon: '🏠',
+        name: 'Click & Collect',
+        description: 'Récupérez en magasin',
+        icon: '/images/logo-lylan.svg',
         color: 'bg-primary-light',
         link: 'https://borneoapp.com/LyLanPokeBarLyon2'
       },
       {
         name: 'Uber Eats',
-        icon: '🚗',
+        description: 'Livraison rapide et fiable',
+        icon: '/images/Uber-Eats-Logo.png',
         color: 'bg-neutral-dark',
         link: 'https://www.ubereats.com/fr/store/ly-lan-poke-bar-lyon-2/q_DyJ48bVD6McVPSUnKQ8Q?srsltid=AfmBOora_U2ayOkhpjUpijsxOt_EU1ztop1dENBehAQyBi-RBh-Gcw38'
       },
       {
         name: 'Deliveroo',
-        icon: '🛵',
+        description: 'Livraison rapide et fiable',
+        icon: '/images/Deliveroo-Logo.png',
         color: 'bg-secondary',
         link: 'https://deliveroo.fr/fr/menu/lyon/part-dieu/ly-lan'
       }
@@ -34,22 +37,25 @@ const restaurants = [
     openingHours: 'Lundi à Samedi: 11h30 - 14h30',
     deliveryServices: [
       {
-        name: 'Retrait en Magasin',
-        icon: '🏠',
+        name: 'Click & Collect',
+        description: 'Récupérez en magasin',
+        icon: '/images/logo-lylan.svg',
         color: 'bg-primary-light',
         link: 'https://borneoapp.com/LyLanPokeBarLyon6?order-mode=true'
       },
       {
         name: 'Uber Eats',
-        icon: '🚗',
+        description: 'Livraison rapide et fiable',
+        icon: '/images/Uber-Eats-Logo.png',
         color: 'bg-neutral-dark',
         link: 'https://www.ubereats.com/fr/store/ly-lan-poke-bar-lyon-6/jUhUR1-tTWKwgYa7vPSxGw?srsltid=AfmBOooFSt-J5WKyqqpUu736MKQmTryj391UzSkCDWjhGKeSqVYW5eUI'
       },
       {
         name: 'Deliveroo',
-        icon: '🛵',
+        description: 'Livraison rapide et fiable',
+        icon: '/images/Deliveroo-Logo.png',
         color: 'bg-secondary',
-        link: 'https://deliveroo.fr/fr/menu/lyon/lyon-perrache/ly-lan-poke-bar-lyon-2-kaido-asian-street-food-37-rue-sainte-helene'
+        link: 'https://deliveroo.fr/fr/menu/lyon/part-dieu/ly-lan'
       }
     ]
   }
@@ -66,8 +72,8 @@ const OrderSection: React.FC = () => {
     }
   };
 
-  // Get delivery services from the first restaurant (they're the same for both)
-  const deliveryServices = restaurants[0].deliveryServices;
+  // Get delivery services from the selected restaurant or the first restaurant if no restaurant is selected
+  const deliveryServices = selectedRestaurant?.deliveryServices || restaurants[0].deliveryServices;
 
   return (
     <section id="order" className="section">
@@ -107,12 +113,16 @@ const OrderSection: React.FC = () => {
               className={`group block bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ${!selectedRestaurant ? 'opacity-30' : 'hover:shadow-lg'
                 }`}
             >
-              <div className={`${service.color} p-6 flex justify-center text-5xl transition-transform ${selectedRestaurant ? 'group-hover:scale-110' : ''}`}>
-                <span>{service.icon}</span>
+              <div className={`${service.color} p-6 flex justify-center items-center transition-transform ${selectedRestaurant ? 'group-hover:scale-110' : ''}`}>
+                <img
+                  src={service.icon}
+                  alt={service.name}
+                  className="h-12 object-contain brightness-0 invert"
+                />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-2">{service.name}</h3>
-                <p className="text-neutral-600 mb-4">Livraison rapide et fiable</p>
+                <p className="text-neutral-600 mb-4">{service.description}</p>
                 {selectedRestaurant ? (
                   <a
                     href={service.link}
