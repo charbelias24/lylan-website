@@ -66,6 +66,9 @@ const OrderSection: React.FC = () => {
     }
   };
 
+  // Get delivery services from the first restaurant (they're the same for both)
+  const deliveryServices = restaurants[0].deliveryServices;
+
   return (
     <section id="order" className="section">
       <div className="max-w-4xl mx-auto">
@@ -98,10 +101,10 @@ const OrderSection: React.FC = () => {
 
         {/* Delivery Options */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
-          {selectedRestaurant?.deliveryServices.map((service) => (
+          {deliveryServices.map((service) => (
             <div
               key={service.name}
-              className={`group block bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ${!selectedRestaurant ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-lg'
+              className={`group block bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ${!selectedRestaurant ? 'opacity-30' : 'hover:shadow-lg'
                 }`}
             >
               <div className={`${service.color} p-6 flex justify-center text-5xl transition-transform ${selectedRestaurant ? 'group-hover:scale-110' : ''}`}>
@@ -128,9 +131,9 @@ const OrderSection: React.FC = () => {
             </div>
           ))}
           {!selectedRestaurant && (
-            <div className="absolute inset-0 pointer-events-none">
-              <div className="flex items-center justify-center h-full">
-                <p className="text-lg text-neutral-600 bg-white/80 px-4 py-2 rounded-lg">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="bg-white/80 backdrop-blur-sm px-6 py-4 rounded-lg shadow-lg">
+                <p className="text-lg text-neutral-600 font-medium">
                   Veuillez sélectionner un restaurant pour commander
                 </p>
               </div>
