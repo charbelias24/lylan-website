@@ -14,8 +14,8 @@ function App() {
       <main>
         <Hero />
         <Menu />
-        <About />
         <OrderSection />
+        <About />
       </main>
       <Footer />
       <FloatingOrderButton />

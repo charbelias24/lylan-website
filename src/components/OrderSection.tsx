@@ -3,51 +3,53 @@ import React, { useState } from 'react';
 const restaurants = [
   {
     id: 1,
-    name: 'Lylan Poké - Lyon 1er',
-    address: '123 Rue des Pêcheurs, 69001 Lyon',
+    name: 'Ly-Lan Poke Bar - Lyon 2ème',
+    address: '37 rue Sainte-Hélène 69002 LYON',
+    openingHours: 'Lundi à Dimanche: 11h30 - 14h30',
     deliveryServices: [
       {
         name: 'Retrait en Magasin',
         icon: '🏠',
         color: 'bg-primary-light',
-        link: 'https://lylan-poke-lyon1er.resos.com'
+        link: 'https://borneoapp.com/LyLanPokeBarLyon2'
       },
       {
         name: 'Uber Eats',
         icon: '🚗',
         color: 'bg-neutral-dark',
-        link: 'https://www.ubereats.com/fr/store/lylan-poke-lyon-1er/123456'
+        link: 'https://www.ubereats.com/fr/store/ly-lan-poke-bar-lyon-2/q_DyJ48bVD6McVPSUnKQ8Q?srsltid=AfmBOora_U2ayOkhpjUpijsxOt_EU1ztop1dENBehAQyBi-RBh-Gcw38'
       },
       {
         name: 'Deliveroo',
         icon: '🛵',
         color: 'bg-secondary',
-        link: 'https://deliveroo.fr/fr/menu/lyon/lyon-1er/lylan-poke-lyon-1er'
+        link: 'https://deliveroo.fr/fr/menu/lyon/part-dieu/ly-lan'
       }
     ]
   },
   {
     id: 2,
-    name: 'Lylan Poké - Lyon 2ème',
-    address: '45 Rue de la République, 69002 Lyon',
+    name: 'Ly-Lan Poke Bar - Lyon 6ème',
+    address: '18 cours Vitton, 69006 LYON',
+    openingHours: 'Lundi à Samedi: 11h30 - 14h30',
     deliveryServices: [
       {
         name: 'Retrait en Magasin',
         icon: '🏠',
         color: 'bg-primary-light',
-        link: 'https://lylan-poke-lyon2.resos.com'
+        link: 'https://borneoapp.com/LyLanPokeBarLyon6?order-mode=true'
       },
       {
         name: 'Uber Eats',
         icon: '🚗',
         color: 'bg-neutral-dark',
-        link: 'https://www.ubereats.com/fr/store/lylan-poke-lyon-2eme/789012'
+        link: 'https://www.ubereats.com/fr/store/ly-lan-poke-bar-lyon-6/jUhUR1-tTWKwgYa7vPSxGw?srsltid=AfmBOooFSt-J5WKyqqpUu736MKQmTryj391UzSkCDWjhGKeSqVYW5eUI'
       },
       {
         name: 'Deliveroo',
         icon: '🛵',
         color: 'bg-secondary',
-        link: 'https://deliveroo.fr/fr/menu/lyon/lyon-2eme/lylan-poke-lyon-2eme'
+        link: 'https://deliveroo.fr/fr/menu/lyon/lyon-perrache/ly-lan-poke-bar-lyon-2-kaido-asian-street-food-37-rue-sainte-helene'
       }
     ]
   }
@@ -65,7 +67,7 @@ const OrderSection: React.FC = () => {
   };
 
   return (
-    <section id="order" className="section bg-gradient-to-br from-primary/10 to-secondary/10">
+    <section id="order" className="section">
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title">Commandez Maintenant</h2>
         <p className="text-center text-lg mb-8">
@@ -87,7 +89,8 @@ const OrderSection: React.FC = () => {
                   }`}
               >
                 <h4 className="font-bold text-lg mb-2">{restaurant.name}</h4>
-                <p className="text-neutral-600">{restaurant.address}</p>
+                <p className="text-neutral-600 mb-2">{restaurant.address}</p>
+                <p className="text-sm text-neutral-500">{restaurant.openingHours}</p>
               </button>
             ))}
           </div>

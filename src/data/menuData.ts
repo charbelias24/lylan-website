@@ -11,52 +11,53 @@ export interface MenuItem {
 export const menuItems: MenuItem[] = [
   {
     id: 1,
-    name: "Classic Hawaiian",
-    description: "Ahi tuna, sticky rice, avocado, cucumber, edamame, pineapple, and ponzu sauce",
-    price: 13.9,
-    image: "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Anti-Age",
+    description: "Riz blanc vinaigré, saumon, avocat, fenouil, wakame, kimchi, furikake, cébette, sauce yuzu ponzu",
+    price: 14.9,
+    image: "/images/anti age.jpg",
     category: "signature",
-    tags: ["popular", "spicy"]
+    tags: ["popular", "healthy", "omega-3", "antioxidant"]
   },
   {
     id: 2,
-    name: "Tropical Shrimp",
-    description: "Marinated shrimp, mango, avocado, red cabbage, coconut flakes, and sriracha mayo",
+    name: "Energie",
+    description: "Quinoa, thon, concombres sunomono, agrumes, edamame, mangue, gingembre, noix de cajou, sauce sésame wasabi",
     price: 14.9,
-    image: "https://images.pexels.com/photos/5835353/pexels-photo-5835353.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/images/energie.jpg",
     category: "signature",
-    tags: ["new"]
+    tags: ["new", "protein-rich", "energizing", "gluten-free"]
   },
   {
     id: 3,
-    name: "Vegan Delight",
-    description: "Tofu, brown rice, avocado, edamame, radish, carrots, and tahini dressing",
-    price: 12.9,
-    image: "https://images.pexels.com/photos/2862154/pexels-photo-2862154.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Detox",
+    description: "Quinoa, tofu, concombres sunomono, chou rouge, carottes au yuzu, mangue, furikake, cébette, sauce 4 huiles",
+    price: 14.9,
+    image: "/images/detox.jpg",
     category: "signature",
-    tags: ["vegan"]
+    tags: ["vegan", "gluten-free", "detox", "plant-based"]
   },
   {
     id: 4,
-    name: "Spicy Salmon",
-    description: "Fresh salmon, quinoa, cucumber, jalapeño, coriander, and yuzu sauce",
-    price: 14.5,
-    image: "https://images.pexels.com/photos/3607083/pexels-photo-3607083.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Anti-Oxydant",
+    description: "Riz noir venere, poulpe, oignons pickles, avocat, edamame, kimchi, baies de goji, coriandre, sauce teriyaki",
+    price: 14.9,
+    image: "/images/anti age.jpg",
     category: "signature",
-    tags: ["spicy", "popular"]
+    tags: ["popular", "antioxidant", "protein-rich", "superfood"]
   },
   {
     id: 5,
-    name: "Build Your Own",
-    description: "Choose your base, protein, toppings, and sauce for a customized experience",
-    price: 13.5,
-    image: "https://images.pexels.com/photos/1199027/pexels-photo-1199027.jpeg?auto=compress&cs=tinysrgb&w=600",
-    category: "custom"
+    name: "Créez Votre Poke",
+    description: "Créez votre propre bol avec votre choix de base, protéine, garnitures et sauce",
+    price: 14.9,
+    image: "/images/poke a composer.jpg",
+    category: "signature",
+    tags: ["customizable", "flexible", "personalized"]
   },
   {
     id: 6,
-    name: "Miso Soup",
-    description: "Traditional Japanese soup with tofu, seaweed, and green onions",
+    name: "Soupe Miso",
+    description: "Soupe japonaise traditionnelle avec tofu, algues et oignons verts",
     price: 3.5,
     image: "https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg?auto=compress&cs=tinysrgb&w=600",
     category: "extras"
@@ -64,23 +65,23 @@ export const menuItems: MenuItem[] = [
   {
     id: 7,
     name: "Edamame",
-    description: "Steamed soybeans lightly seasoned with sea salt",
+    description: "Fèves de soja cuites à la vapeur légèrement assaisonnées de sel marin",
     price: 4.0,
     image: "https://images.pexels.com/photos/3296427/pexels-photo-3296427.jpeg?auto=compress&cs=tinysrgb&w=600",
     category: "extras"
   },
   {
     id: 8,
-    name: "Fresh Tropical Juice",
-    description: "Blend of pineapple, orange, and passionfruit",
+    name: "Jus Tropical Frais",
+    description: "Mélange d'ananas, d'orange et de fruit de la passion",
     price: 4.5,
     image: "https://images.pexels.com/photos/3651045/pexels-photo-3651045.jpeg?auto=compress&cs=tinysrgb&w=600",
     category: "drinks"
   },
   {
     id: 9,
-    name: "Coconut Water",
-    description: "Pure coconut water, served chilled",
+    name: "Eau de Coco",
+    description: "Eau de coco pure, servie fraîche",
     price: 3.5,
     image: "https://images.pexels.com/photos/1138991/pexels-photo-1138991.jpeg?auto=compress&cs=tinysrgb&w=600",
     category: "drinks"
@@ -89,7 +90,6 @@ export const menuItems: MenuItem[] = [
 
 export const menuCategories = [
   { id: 'signature', name: 'Signature Bowls' },
-  { id: 'custom', name: 'Build Your Own' },
   { id: 'extras', name: 'Extras' },
   { id: 'drinks', name: 'Drinks' }
 ];
