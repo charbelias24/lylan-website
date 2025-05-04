@@ -44,7 +44,6 @@ const Footer: React.FC = () => {
             <h4 className="text-xl font-semibold mb-4">Menu</h4>
             <ul className="space-y-2">
               <li><a href="#menu" className="hover:text-secondary transition-colors">Signature Bowls</a></li>
-              <li><a href="#menu" className="hover:text-secondary transition-colors">Build Your Own</a></li>
               <li><a href="#menu" className="hover:text-secondary transition-colors">Extras</a></li>
               <li><a href="#menu" className="hover:text-secondary transition-colors">Drinks</a></li>
             </ul>

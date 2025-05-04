@@ -40,11 +40,11 @@ const Navbar: React.FC = () => {
               <a href="#menu" className={`${isScrolled ? 'text-neutral-800' : 'text-white'} hover:text-secondary font-medium`}>
                 Menu
               </a>
-              <a href="#about" className={`${isScrolled ? 'text-neutral-800' : 'text-white'} hover:text-secondary font-medium`}>
-                À Propos
-              </a>
               <a href="#order" className={`${isScrolled ? 'text-neutral-800' : 'text-white'} hover:text-secondary font-medium`}>
                 Commander
+              </a>
+              <a href="#about" className={`${isScrolled ? 'text-neutral-800' : 'text-white'} hover:text-secondary font-medium`}>
+                À Propos
               </a>
               <a href="#contact" className={`${isScrolled ? 'text-neutral-800' : 'text-white'} hover:text-secondary font-medium`}>
                 Contact

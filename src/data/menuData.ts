@@ -4,7 +4,7 @@ export interface MenuItem {
   description: string;
   price: number;
   image: string;
-  category: 'signature' | 'custom' | 'extras' | 'drinks';
+  category: 'signature' | 'custom' | 'extras' | 'drinks' | 'desserts';
   tags?: string[];
 }
 
@@ -15,8 +15,7 @@ export const menuItems: MenuItem[] = [
     description: "Riz blanc vinaigré, saumon, avocat, fenouil, wakame, kimchi, furikake, cébette, sauce yuzu ponzu",
     price: 14.9,
     image: "/images/anti age.jpg",
-    category: "signature",
-    tags: ["popular", "healthy", "omega-3", "antioxidant"]
+    category: "signature"
   },
   {
     id: 2,
@@ -24,8 +23,7 @@ export const menuItems: MenuItem[] = [
     description: "Quinoa, thon, concombres sunomono, agrumes, edamame, mangue, gingembre, noix de cajou, sauce sésame wasabi",
     price: 14.9,
     image: "/images/energie.jpg",
-    category: "signature",
-    tags: ["new", "protein-rich", "energizing", "gluten-free"]
+    category: "signature"
   },
   {
     id: 3,
@@ -33,8 +31,7 @@ export const menuItems: MenuItem[] = [
     description: "Quinoa, tofu, concombres sunomono, chou rouge, carottes au yuzu, mangue, furikake, cébette, sauce 4 huiles",
     price: 14.9,
     image: "/images/detox.jpg",
-    category: "signature",
-    tags: ["vegan", "gluten-free", "detox", "plant-based"]
+    category: "signature"
   },
   {
     id: 4,
@@ -42,8 +39,7 @@ export const menuItems: MenuItem[] = [
     description: "Riz noir venere, poulpe, oignons pickles, avocat, edamame, kimchi, baies de goji, coriandre, sauce teriyaki",
     price: 14.9,
     image: "/images/anti age.jpg",
-    category: "signature",
-    tags: ["popular", "antioxidant", "protein-rich", "superfood"]
+    category: "signature"
   },
   {
     id: 5,
@@ -51,45 +47,68 @@ export const menuItems: MenuItem[] = [
     description: "Créez votre propre bol avec votre choix de base, protéine, garnitures et sauce",
     price: 14.9,
     image: "/images/poke a composer.jpg",
-    category: "signature",
-    tags: ["customizable", "flexible", "personalized"]
+    category: "signature"
   },
   {
     id: 6,
-    name: "Soupe Miso",
-    description: "Soupe japonaise traditionnelle avec tofu, algues et oignons verts",
+    name: "Thé vert citronnelle et menthe",
+    description: "Thé vert bio infusé avec citronnelle et menthe fraîche",
     price: 3.5,
-    image: "https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg?auto=compress&cs=tinysrgb&w=600",
-    category: "extras"
+    image: "",
+    category: "drinks"
   },
   {
     id: 7,
-    name: "Edamame",
-    description: "Fèves de soja cuites à la vapeur légèrement assaisonnées de sel marin",
-    price: 4.0,
-    image: "https://images.pexels.com/photos/3296427/pexels-photo-3296427.jpeg?auto=compress&cs=tinysrgb&w=600",
-    category: "extras"
+    name: "Infusion rooibos & hibiscus",
+    description: "Infusion bio de rooibos et hibiscus",
+    price: 3.5,
+    image: "",
+    category: "drinks"
   },
   {
     id: 8,
-    name: "Jus Tropical Frais",
-    description: "Mélange d'ananas, d'orange et de fruit de la passion",
-    price: 4.5,
-    image: "https://images.pexels.com/photos/3651045/pexels-photo-3651045.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Citronnade bio",
+    description: "Citronnade maison à base de citrons bio",
+    price: 3.5,
+    image: "",
     category: "drinks"
   },
   {
     id: 9,
-    name: "Eau de Coco",
-    description: "Eau de coco pure, servie fraîche",
+    name: "Eau détox",
+    description: "Eau infusée aux fruits frais et herbes",
     price: 3.5,
-    image: "https://images.pexels.com/photos/1138991/pexels-photo-1138991.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "",
     category: "drinks"
+  },
+  {
+    id: 10,
+    name: "Cake du moment",
+    description: "Notre cake maison du jour",
+    price: 3.5,
+    image: "",
+    category: "desserts"
+  },
+  {
+    id: 11,
+    name: "Banh Bo",
+    description: "Dessert vietnamien au pandan (le gâteau vert)",
+    price: 3.5,
+    image: "",
+    category: "desserts"
+  },
+  {
+    id: 12,
+    name: "Salade de fruits frais",
+    description: "Mélange de fruits de saison frais",
+    price: 3.5,
+    image: "",
+    category: "desserts"
   }
 ];
 
 export const menuCategories = [
-  { id: 'signature', name: 'Signature Bowls' },
-  { id: 'extras', name: 'Extras' },
-  { id: 'drinks', name: 'Drinks' }
+  { id: 'signature', name: 'Nos Poke Bowls' },
+  { id: 'drinks', name: 'Boissons' },
+  { id: 'desserts', name: 'Desserts' }
 ];
