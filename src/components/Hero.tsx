@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: 'url(https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1600)'
+        backgroundImage: 'url(/images/background.jpg)'
       }}
     >
       <div className="absolute inset-0 bg-black opacity-40"></div>
