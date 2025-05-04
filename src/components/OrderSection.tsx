@@ -26,7 +26,7 @@ const restaurants = [
         description: 'Livraison rapide et fiable',
         icon: '/images/Deliveroo-Logo.png',
         color: 'bg-secondary',
-        link: 'https://deliveroo.fr/fr/menu/lyon/part-dieu/ly-lan'
+        link: 'https://deliveroo.fr/fr/menu/lyon/lyon-perrache/ly-lan-poke-bar-lyon-2-kaido-asian-street-food-37-rue-sainte-helene'
       }
     ]
   },
